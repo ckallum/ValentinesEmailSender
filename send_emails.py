@@ -8,8 +8,8 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 import os.path
 
-EMAIL_FROM = 'corporate@cssbristol.co.uk'
-EMAIL_TO = ['in18536']
+EMAIL_FROM = ''
+EMAIL_TO = ['']
 EMAIL_SUBJECT = 'Happy Valentines from CSS'
 SERVICE_ACCOUNT_FILE = 'credentials.json'
 EMAIL_CONTENT = """Hi,\n
