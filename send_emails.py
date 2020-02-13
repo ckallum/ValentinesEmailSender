@@ -9,7 +9,7 @@ from google.auth.transport.requests import Request
 import os.path
 
 EMAIL_FROM = 'corporate@cssbristol.co.uk'
-EMAIL_TO = []
+EMAIL_TO = ['in18536']
 EMAIL_SUBJECT = 'Happy Valentines from CSS'
 SERVICE_ACCOUNT_FILE = 'credentials.json'
 EMAIL_CONTENT = """Hi,\n
@@ -69,7 +69,7 @@ def main():
     service = service_account_login()
     # Call the Gmail API
     for i in range(len(EMAIL_TO)):
-        message = create_message(EMAIL_FROM, EMAIL_TO[i], EMAIL_SUBJECT, EMAIL_CONTENT)
+        message = create_message(EMAIL_FROM, EMAIL_TO[i]+"@bristol.ac.uk", EMAIL_SUBJECT, EMAIL_CONTENT)
         send_message(service, 'me', message)
 
 
